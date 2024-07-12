@@ -20,7 +20,7 @@ const Text: FC<TextProps> = ({}) => {
   }
 
   const startListening = () => {
-    SpeechRecognition.startListening({ continuous: true });
+    SpeechRecognition.startListening({ continuous: true, language: "ko-KR" });
   };
 
   return (
