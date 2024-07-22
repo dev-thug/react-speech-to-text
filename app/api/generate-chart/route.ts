@@ -26,11 +26,10 @@ export async function POST(request: Request) {
       messages: [
         {
           role: "system",
-          content: `Generate an EMR chart from the following transcript: ${transcript}`,
+          content: `Generate an EMR chart from the following transcript in Korean: ${transcript}`,
         },
       ],
-      model: "gpt-3.5-turbo-instruct",
-      //   model: "gpt-4o-mini",
+      model: "gpt-3.5-turbo-0125",
     });
 
     const emrChart = response.choices[0];
